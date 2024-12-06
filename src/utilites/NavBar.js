@@ -21,7 +21,12 @@ function NavBar() {
   };
 
   return (
-    <Navbar expand="lg" className="bg-transparent">
+    <Navbar expand="lg"
+            style={{
+                backgroundColor: '#f9f3e6', /* Light background color for separation */
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', /* Optional: adds a subtle shadow to give depth */
+            }} 
+            className="bg-transparent">
       <Container fluid className="d-flex flex-row justify-content-between">
         <Link to="/" className="navbar-brand" style={{
           fontSize: '2rem',

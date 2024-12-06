@@ -31,6 +31,7 @@ html {
   background: linear-gradient(135deg, #d6a4a4 0%, #f5b6d1 100%);
   /* Slightly darker gradient on hover */
 }
+
 .App{
   font-family: 'Merriweather', serif;
   /* height: 100vh ; */
