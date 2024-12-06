@@ -8,7 +8,7 @@ const Favourite = () => {
 
   if (favProducts.length === 0) {
     return (
-      <Container className="py-5 text-center" style={{height:  'calc(100vh - 65.6px)' }}>
+      <Container className="py-5 text-center" >
         <h3 className="fw-bold ">Your Favourite List is Empty</h3>
         <p className="text-muted my-3">Start adding some recipes to your favourites!</p>
       </Container>
