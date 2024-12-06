@@ -3,6 +3,7 @@ import {  Col, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { addToFavourite, removeFromFavourite } from '../Slices/Products';
+import LoadingSpinner from './LoadingSpinner';
 
 const ProductDetails = () => {
     const { id } = useParams(); // Extract the recipe ID from the URL
@@ -37,10 +38,10 @@ const ProductDetails = () => {
         setExist(!exist); // Toggle local `exist` state
     };
     if (!product) {
-        return <p>Loading product details...</p>;
+        return <LoadingSpinner />;
     }
     return (
-        <Container className='py-3 my-2 '>
+        <Container className='py-3 '>
           <Row className="d-flex align-items-center my-5">
               <Col lg={6} md={12} className="text-center mb-4 mb-lg-0">
                 <img
